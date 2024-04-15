@@ -1,5 +1,103 @@
 .hero {
     padding: 5.6vw;
-    min-height: 80vh;
+    min-height: 90vh;
     background-image: url(../images/hero_desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (max-width: 768px) {
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -150px;
+    }
+    
+    &__content {
+        max-width: 80%;
+        margin-top: 60px;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            margin: 0;
+        }
+
+        h1 {
+            color: #fff;
+            letter-spacing: 15px;
+            font-size: 50px;
+            font-family: "Bodoni Moda", serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-style: normal;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+                letter-spacing: normal;
+            }
+        }
+
+        .description {
+            margin-top: 48px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                margin-top: 4px;
+                padding: 4px;
+            }
+
+            span {
+                margin-right: 16px;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+    
+                img {
+                    max-width: 24px;
+                }
+            }
+        }
+
+        .rating {
+            margin: 16px 0;
+            padding: 8px;
+
+            @media (max-width: 768px) {
+                margin-top: 4px;
+                padding: 4px;
+            }
+
+            span {
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .genres {
+            display: flex;
+            padding: 8px;
+
+            @media (max-width: 768px) {
+                display: block;
+                padding: 0;
+            }
+
+            li {
+                margin-right: 16px;
+                padding: 8px;
+                border: 1px solid #fff;
+                border-radius: 5px;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    padding: 2px;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
 }

@@ -1,7 +1,66 @@
+@use 'header';
 @use 'hero';
+@use 'sinopsis';
+@use 'cast';
+@use 'director';
+@use 'composer';
+@use 'footer';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+$corDeFundo: #010101;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+
+body {
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrincipal;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: $corTextoSecundario;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.text--big {
+    @include text(20px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(36px);
+}
+
+.title--alt {
+    @include title;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.title--small {
+    @include title(20px);
 }

@@ -3,16 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insterstellar</title>
+    <title>Interstellar</title>
     <link rel="stylesheet" href="dist/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/interstellar_logo.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item title--small">
+                    <a href="#sinopse" class="header__link">Sinopse</a>
+                </li>
+                <li class="header__links__item title--small">
+                    <a href="#elenco" class="header__link">Elenco</a>
+                </li>
+                <li class="header__links__item title--small">
+                    <a href="#" class="header__link">Produção</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1>
-                
-            </h1>
+            <h1>Interstellar</h1>
+            <div class="description">
+                <span class="text--big">2014</span>
+                <span class="text--big">2h 49min</span>
+                <span><img src="https://m.media-amazon.com/images/G/01/vcc/maturity-ratings-logos/png/djctq/10._SY64_FMpng_.png" alt=""></span>
+            </div>
+            <div class="rating">
+                <span class="text--big"><b>IMDb: 8,7/10</b></span>
+            </div>
+            <ul class="genres">
+                <li class="text--big">Ficção científica</li>
+                <li class="text--big">Aventura</li>
+                <li class="text--big">Drama</li>
+            </ul>
         </div>
     </section>
+    <section class="sinopsis" id="sinopse">
+        <div class="sinopsis__content">
+            <img src="./dist/images/interstellar_poster.jpg" alt="">
+            <div class="sinopsis__content__text">
+                <h2 class="title--alt">Sinopse</h2>
+                <p class="text--big">
+                    As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="cast" id="elenco">
+        <div class="cast__container">
+            <h2 class="title--alt">Elenco</h2>
+            <nav class="cast__nav">
+                <div class="cast__nav__container">
+                        <div class="cast__nav__buttons">
+                            <button data-tab-button="lista1" class="cast__nav__button cast__nav__button--is-active"></button>
+                            <button data-tab-button="lista2" class="cast__nav__button"></button>
+                        </div>
+                </div>
+            </nav>
+            <ul data-tab-id="lista1" class="cast__list cast__list--is-active">
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/matthew_mcconaughey.jpg" alt="">
+                    <h3 class="title--small">Matthew McConaughey</h3>
+                    <p class="text">Cooper</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/anne_hathaway.jpg" alt="">
+                    <h3 class="title--small">Anne Hathaway</h3>
+                    <p class="text">Amelia Brand</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/jessica_chastain.jpg" alt="">
+                    <h3 class="title--small">Jessica Chastain</h3>
+                    <p class="text">Murphy (Adulta)</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/matt_damon.jpg" alt="">
+                    <h3 class="title--small">Matt Damon</h3>
+                    <p class="text">Dr. Mann</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/timothee_chalamet.jpg" alt="">
+                    <h3 class="title--small">Timotheé Chalamet</h3>
+                    <p class="text">Tom (Adolescente)</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/mackenzie_foy.jpg" alt="">
+                    <h3 class="title--small">Mackenzie Foy</h3>
+                    <p class="text">Murphy (criança)</p>
+                </li>
+            </ul>
+            <ul data-tab-id="lista2" class="cast__list">
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/michael_caine.jpg" alt="">
+                    <h3 class="title--small">Michael Caine</h3>
+                    <p class="text">Professor Brand</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/john_lithgow.jpg" alt="">
+                    <h3 class="title--small">John Lithgow</h3>
+                    <p class="text">Donald</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/wes_bentley.jpg" alt="">
+                    <h3 class="title--small">Wes Bentley</h3>
+                    <p class="text">Doyle</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/casey_affleck.jpg" alt="">
+                    <h3 class="title--small">Casey Affleck</h3>
+                    <p class="text">Tom (Adulto)</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/ellen_burstyn.jpg" alt="">
+                    <h3 class="title--small">Ellen Burstyn</h3>
+                    <p class="text">Murphy (Idosa)</p>
+                </li>
+                <li class="cast__list__item">
+                    <img src="./dist/images/elenco/david_gyasi.jpg" alt="">
+                    <h3 class="title--small">David Gyasi</h3>
+                    <p class="text">Romilly</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="director">
+        <div class="director__container">
+            <h2 class="title--alt">Direção</h2>
+            <div class="director__content">
+                <img src="dist/images/christopher-nolan.jpg" alt="">
+                <div class="director__content__text">
+                    <h3 class="title--big">Christopher Nolan</h3>
+                    <p class="text--big">
+                        Christopher Nolan, CBE é um diretor de cinema, roteirista e produtor britânico. Seus doze longas-metragens já arrecadaram o equivalente a mais de 6 bilhões de dólares em todo o mundo, fazendo do diretor um dos mais bem-sucedidos comercialmente da moderna Hollywood.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="composer">
+        <div class="composer__container">
+            <h2 class="title--alt">Compositor</h2>
+            <div class="composer__content">
+                <div class="composer__content__text">
+                    <h3 class="title--big">Hans Zimmer</h3>
+                    <p class="text--big">
+                        Hans Florian Zimmer é um compositor alemão, conhecido por seus trabalhos com trilha sonoras de vários filmes. Hans possui mais de 110 prêmios de 178 indicações na carreira, sendo o segundo compositor de trilha sonoras para filmes mais premiado da história, ficando atrás apenas de John Williams que possui 112 prêmios de 231 indicações segundo o IMDb.
+                    </p>
+                </div>
+                <img src="./dist/images/hans-zimmer.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul>
+                <li class="footer__contacts">
+                    <a href="https://github.com/WisterianWell">
+                        <img src="./dist/images/github-mark.svg" alt="" class="footer__contacts__logo">
+                    </a>
+                </li>
+            </ul>
+            <i class="text">Lucas Tanino©</i>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
