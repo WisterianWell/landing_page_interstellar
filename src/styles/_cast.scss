@@ -15,7 +15,7 @@
         max-width: 80%;
         border-radius: 10px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             max-width: 90%;
         }
     }
@@ -24,6 +24,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 5%;
         display: none;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         @media (max-width: 768px) {
             grid-template-columns: 1fr 1fr;
