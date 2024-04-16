@@ -30,6 +30,11 @@
             width: 100%;
             border-radius: 10px;
 
+            @media (max-width: 768px) {
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+
             &:hover {
                 transform: scale(1.05);
                 transition: 0.5s;
@@ -38,10 +43,10 @@
 
         &__text {
             margin-right: 36px;
+            width: 100%;
 
             h3 {
                 @media (max-width: 768px) {
-                    margin-top: 12px;
                     font-size: 20px;
                 }
             }
@@ -53,6 +58,7 @@
                 @media (max-width: 768px) {
                     margin-top: 8px;
                     font-size: 14px;
+                    max-width: 100%;;
                 }
             }
         }
